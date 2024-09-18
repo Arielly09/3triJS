@@ -1,0 +1,25 @@
+
+function calcular(numero1, numero2, operacao) {
+    switch (operacao) {
+        case '+':
+            return numero1 + numero2;
+        case '-':
+            return numero1 - numero2;
+        case '*':
+            return numero1 * numero2;
+        case '/':
+            return numero1 / numero2;
+        default:
+            return "Operação inválida";
+    }
+}
+
+let resultado = calcular(10, 5, '+');
+console.log("Resultado da soma:", resultado);
+
+function ehPalindromo(str) {
+    let strLimpa = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase(); // Remove caracteres não alfanuméricos e converte para minúsculas
+    let strReversa = strLimpa.split('').reverse().join(''); // Inverte a string
+    return strLimpa === strReversa; // Verifica se são iguais
+}
+

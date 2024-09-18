@@ -1,0 +1,26 @@
+let primeiroNome = "João";
+let sobrenome = "Silva";
+let nomeCompleto = primeiroNome + " " + sobrenome;
+
+console.log("Nome completo:", nomeCompleto);
+
+function calculadora(a, b, operacao) {
+    switch (operacao) {
+        case 'soma':
+            return a + b;
+        case 'subtracao':
+            return a - b;
+        case 'multiplicacao':
+            return a * b;
+        case 'divisao':
+            return a / b;
+        default:
+            return "Operação inválida";
+    }
+}
+
+let resultadoSoma = calculadora(10, 5, 'soma');
+console.log("Resultado da soma:", resultadoSoma);
+
+let resultadoDivisao = calculadora(10, 5, 'divisao');
+console.log("Resultado da divisão:", resultadoDivisao);
